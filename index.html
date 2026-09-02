@@ -248,22 +248,7 @@
       font-size: 15px;
     }
 
-    .invite-code {
-      display: none;
-
-      margin-top: 16px;
-
-      font-size: 13px;
-
-      color: #8793a3;
-    }
-
-    .invite-code span {
-      direction: ltr;
-      display: inline-block;
-      font-weight: 700;
-    }
-
+    
     footer {
       margin-top: 26px;
 
@@ -360,13 +345,6 @@
       </div>
 
 
-      <div
-        id="inviteCode"
-        class="invite-code"
-      >
-        קוד הזמנה:
-        <span id="codeText"></span>
-      </div>
 
     </section>
 
@@ -401,15 +379,6 @@
       .addEventListener('click', openApp);
 
 
-    if (code) {
-      document
-        .getElementById('codeText')
-        .textContent = code.toUpperCase();
-
-      document
-        .getElementById('inviteCode')
-        .style.display = 'block';
-    }
 
 
     /*
