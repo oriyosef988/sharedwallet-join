@@ -63,27 +63,16 @@
     }
 
     .wallet-icon {
-      width: 54px;
-      height: 54px;
+  width: 54px;
+  height: 54px;
 
-      border-radius: 15px;
+  border-radius: 15px;
 
-      background:
-        linear-gradient(
-          135deg,
-          #1577f2,
-          #0754c7
-        );
+  object-fit: cover;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      box-shadow:
-        0 8px 22px rgba(21, 119, 242, 0.25);
-
-      font-size: 29px;
-    }
+  box-shadow:
+    0 8px 22px rgba(21, 119, 242, 0.25);
+}
 
     .brand-name {
       font-size: 29px;
@@ -310,7 +299,11 @@
   <main class="page">
 
     <div class="brand">
-      <div class="wallet-icon">👥</div>
+      <img
+  class="wallet-icon"
+  src="./icon.png"
+  alt="SharedWallet"
+/>
 
       <div class="brand-name">
         Shared<span>Wallet</span>
